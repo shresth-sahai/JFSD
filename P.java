@@ -281,19 +281,156 @@
 
 // variable args -> 
 
-public class Invoice {
+// public class Invoice {
 
-     static int carPrice=10;
-     public int sum(int a,int ...var){
-        int p=0;
-        for(int i=0;i<5;i++){
-            p=p+i;
-        }
-        return p;
-     }
-     public static void main(String[] args) {
-        Invoice i=new Invoice();
-        i.sum(3,8,9,10,11,12);
-     }
-}
+//      static int carPrice=10;
+//      public int sum(int a,int ...var){
+//         int p=0;
+//         // for(int i=0;i<5;i++){
+//         //     p=p+i;
+//         // }
+//         // for each
+//         for(int v:var){   // v= arr[i]
+//             p+=v;
+//         }
+//         return p;
+//      }
+//      public static void main(String[] args) {
+//         Invoice i=new Invoice();
+//         i.sum(3,8,9,10,11,12);
+//      }
+// }
 
+// class Demo{
+//     static int count=0;
+//     int num=10;
+//     static void show(){
+//          System.out.print("Static 1");
+//          System.out.print(count);
+//             //    System.out.print(num); -> errr 
+//     }
+//     void display(){
+//         System.out.print(count);
+//         System.out.print(num);
+//     }
+//     public static void main(String[] args) {
+//         Demo.show();
+//     }
+
+// }
+
+// public class P {
+//     static void test(){
+//        System.out.print("test"); 
+//     }
+// }
+// class C extends P{
+//     // Not overriding -> method hiding 
+//     static void test(){
+//          System.out.print("test child"); 
+//     }
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         P.test(); // test
+//         C.test(); // child test 
+//     }
+    
+// }
+
+
+// class A{
+//     final void show(){
+//         System.out.print("Final a")
+//     }
+// }
+// class B extends A{
+//     // void show not possible-> ERR
+// }
+
+// abstract class Animal{
+//     abstract void sound(); // no body
+
+//     void sleep(){
+//         System.out.print("Animal sleep");
+//     }
+// }
+// class Dog extends Animal{
+//     @Override
+//     void sound(){ // impl always in the child 
+//          System.out.print("Dog Sound");
+//          // a.sound()
+//          //a.sleep 
+//     }
+// }
+
+
+// 1. Which method type belongs to the class, not objects?
+
+// a) instance method
+// b) static method
+// c) final method
+// d) abstract method
+
+// 2. Which of the following methods CANNOT be overridden?
+
+// a) abstract method
+// b) instance method
+// c) static method
+// d) final method
+
+// 3. What happens if a subclass defines a static method with the same name as a static method in the parent class?
+
+// a) It overrides the parent method
+// b) It hides the parent method
+// c) It causes a compile-time error
+// d) It is ignored
+
+// 4. Which of the following must be inside an abstract class?
+
+// a) Only abstract methods
+// b) One abstract method and one final method
+// c) At least one abstract method
+// d) It may contain zero or more abstract methods
+
+// 5. What does a final method mean?
+
+// a) The method has no body
+// b) The method cannot call other methods
+// c) The method cannot be overridden
+// d) The method must be static
+
+// 6. Which keyword is used to declare a method without implementation?
+
+// a) final
+// b) static
+// c) abstract
+// d) override
+
+// 7. What is the correct way to call a static method?
+
+// a) obj.methodName();
+// b) super.methodName();
+// c) ClassName.methodName();
+// d) this.methodName();
+
+// 8. A class containing an abstract method must be declared as:
+
+// a) final
+// b) static
+// c) abstract
+// d) public
+
+// 9. Which of the following is TRUE about abstract methods?
+
+// a) They must have a body
+// b) They cannot be overridden
+// c) They MUST be implemented in a child class
+// d) They can be called without an object
+
+// 10. What type of method allows runtime polymorphism?
+
+// a) static method
+// b) final method
+// c) abstract method
+// d) overridden instance method
